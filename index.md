@@ -14,6 +14,10 @@
     Emisije od 2011 do 2019 godine
 </h2>
 
+<p>
+    Gozba je radijska emisija Radio Beograda 2 koja se bavi filozofskim temama.
+</p>
+
 <div class="years">
     <strong>Idi na godinu:</strong> {% for jump_to_year in (2011..2019) %} <a href="#{{ jump_to_year }}">{{ jump_to_year }}</a> {% endfor %}
 </div>
