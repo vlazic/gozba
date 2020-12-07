@@ -37,7 +37,7 @@
 
 <div class="show">
     <strong>Emisija od {{ show_date }}</strong>
-    <audio controls preload="none">
+    <audio controls preload="none" data-audio-title="gozba-{{ show_date }}">
     <source src="{{ site.baseurl }}{{ show.path }}" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>

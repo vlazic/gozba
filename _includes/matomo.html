@@ -11,6 +11,17 @@
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
       g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
+    document.addEventListener("DOMContentLoaded", function(event) {
+    var audioTags = document.getElementsByTagName("audio");
+
+    for (var index = 0; index < audioTags.length; ++index) {
+        var audioTag = audioTags[index];
+        audioTag.addEventListener("playing", function() {
+            _paq.push(['trackEvent', 'MediaPlayer', 'Play', this.dataset.audioTitle]);
+        }, true);
+
+    }
+});
   </script>
   <noscript><p><img src="//stats.vlazic.com/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
