@@ -11,7 +11,7 @@
 </style>
 
 <h2>
-    Emisije od 2011 do 2019
+    Emisije od 2011 do 2019 godine
 </h2>
 
 <div class="years">
