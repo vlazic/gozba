@@ -19,6 +19,9 @@
         audioTag.addEventListener("playing", function() {
             _paq.push(['trackEvent', 'Player', 'Play', this.dataset.audioTitle]);
         }, true);
+        audioTag.addEventListener("pause", function() {
+            _paq.push(['trackEvent', 'Player', 'Pause', this.dataset.audioTitle]);
+        }, true);
 
     }
 });
