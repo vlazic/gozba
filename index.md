@@ -41,7 +41,7 @@
     <source src="{{ site.baseurl }}{{ show.path }}" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
-    <a href="{{ site.baseurl }}{{ show.path }}" title="Preuzmi emisiju gozba od {{ show_date }}">
+    <a href="{{ site.baseurl }}{{ show.path }}" title="Preuzmi emisiju gozba od '{{ show_date }}' desnim klikom pa 'Save link as...'">
         <img src="download.png" alt="Preuzmi emisiju gozba od {{ show_date }}" />
     </a>
 
