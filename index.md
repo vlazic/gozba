@@ -18,8 +18,6 @@
     <strong>Idi na godinu:</strong> {% for jump_to_year in (2011..2019) %} <a href="#{{ jump_to_year }}">{{ jump_to_year }}</a> {% endfor %}
 </div>
 
-<hr />
-
 {% assign previous_show_year = '' %}
 
 {% for show in site.static_files %}
@@ -31,6 +29,8 @@
 
 {% if show_year != previous_show_year %}
 {% assign previous_show_year = show_year %}
+
+<hr />
 
 <h3 id="{{show_year}}">Emisije iz {{ show_year }}</h3>
 {% endif %}
