@@ -1,1 +1,4 @@
-theme: jekyll-theme-tactile
+title: Gozba
+description: Arhiva radijske emisije Gozba od 2011 do 2019
+theme: jekyll-theme-modernist
+show_downloads: true
