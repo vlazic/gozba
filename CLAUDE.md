@@ -4,7 +4,7 @@
 Ruby/Jekyll site using Bundler. Lock file: `Gemfile.lock`. Default branch: `master`.
 Uses `github-pages` gem which pins many transitive dependencies.
 
-## Security patching (last patched: 2026-03-04)
+## Security patching (last patched: 2026-03-25)
 - `nokogiri` is a **direct** dependency in Gemfile (was `~> 1.18.3`, updated to `~> 1.19`)
 - `faraday` is **transitive** (via github-pages -> jekyll-github-metadata -> octokit -> sawyer)
 
