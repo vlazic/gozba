@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<audio controls preload="none" data-audio-title="{{ page.date | date: " %d. %m. %Y." }}">
+    <source src="{{ site.baseurl }}{{ page.audio_path }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<a href="{{ site.baseurl }}{{ page.audio_path }}" download="gozba-{{ page.date | date: " %y-%m-%d" }}.mp3">
+    <img src="{{ site.baseurl }}/download.png" alt="Preuzmi emisiju gozba od {{ page.date | date: " %d. %m. %Y." }}" />
+</a>
+
+<p><a href="{{ site.baseurl }}/">Nazad na listu emisija</a></p>
+
+{{ content }}
